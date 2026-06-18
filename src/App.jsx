@@ -3,6 +3,7 @@ import Form from "./components/Form";
 import Header from "./components/Header";
 import { getFromApi } from "./utils/fetchApi";
 import Result from "./components/Result";
+import CurrencyList from "./components/CurrencyList";
 
 let baseApi = "https://cbu.uz/uz/arkhiv-kursov-valyut/json/";
 
@@ -41,7 +42,9 @@ function App() {
         setInputValue={setInputValue}
         result={result}
       />
-      <Result />
+      {/* <Result /> */}
+
+      <CurrencyList valutes={valutes} />
     </div>
   );
 }
